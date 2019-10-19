@@ -12,18 +12,19 @@ default_img:
 
 # Profile settings
 author1:
+  name: Kayoung Kim
+  profile_img: 
+  profile: Kayoung Kim
+  social:
+    github: https://github.com/kayoungk
+
+author2:
   name: Kaiqi Yang
   profile_img: 
   profile: Kaiqi Yang
   social:
     github: https://github.com/KaiqiYang94
 
-author2:
-  name: Kayoung Kim
-  profile_img: 
-  profile: Kayoung Kim
-  social:
-    github: https://github.com/kayoungk
 
 # Build settings
 markdown: kramdown
