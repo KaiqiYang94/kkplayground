@@ -1,5 +1,5 @@
 ---
-layout: post-ky
+layout: post-kayoung
 title: "Craft Beer"
 date: 2016-02-19
 categories:
