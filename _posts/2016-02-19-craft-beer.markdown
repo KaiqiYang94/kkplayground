@@ -1,5 +1,5 @@
 ---
-layout: post-kk
+layout: post-ky
 title: "Craft Beer"
 date: 2016-02-19
 categories:

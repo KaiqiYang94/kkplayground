@@ -16,14 +16,14 @@ author1:
   profile_img: 
   profile: Kaiqi Yang
   social:
-    github: 
+    github: https://github.com/KaiqiYang94
 
 author2:
   name: Kayoung Kim
   profile_img: 
   profile: Kayoung Kim
   social:
-    github: 
+    github: https://github.com/kayoungk
 
 # Build settings
 markdown: kramdown
