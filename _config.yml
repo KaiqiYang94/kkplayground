@@ -3,7 +3,7 @@ email:
 permalink: /:year/:month/:day/:title/
 google_analytics: 
 
-title: Trophy
+title: KKPlayground
 description: 
 url: ""
 baseurl: ""
@@ -11,11 +11,19 @@ twitter_username:
 default_img: 
 
 # Profile settings
-name: 
-profile_img: 
-profile: 
-social:
-  github: 
+author1:
+  name: Kaiqi Yang
+  profile_img: 
+  profile: Kaiqi Yang
+  social:
+    github: 
+
+author2:
+  name: Kayoung Kim
+  profile_img: 
+  profile: Kayoung Kim
+  social:
+    github: 
 
 # Build settings
 markdown: kramdown

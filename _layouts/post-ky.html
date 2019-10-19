@@ -34,16 +34,16 @@ layout: default
   <section class="profile">
     <div class="profile__card">
       <div class="profile__img">
-        <figure class="absolute-bg" style="background-image: url('{{ site.profile_img }}');"></figure>
+        <figure class="absolute-bg" style="background-image: url('{{ site.author2.profile_img }}');"></figure>
       </div>
       <div class="profile__container">
-        <p>{{ site.profile }}</p>
-        {% if site.email or site.social %}
+        <p>{{ site.author2.profile }}</p>
+        {% if site.author2.email or site.author2.social %}
           <ul class="profile__social">
-            {% if site.email %}
-              <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
+            {% if site.author2.email %}
+              <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.author2.email }}"></a></li>
             {% endif %}
-            {% for social in site.social %}
+            {% for social in site.author2.social %}
               <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank"></a></li>
             {% endfor %}
           </ul>
