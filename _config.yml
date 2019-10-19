@@ -13,14 +13,14 @@ default_img:
 # Profile settings
 author1:
   name: Kayoung Kim
-  profile_img: https://github.com/KaiqiYang94/kaiqiyang94.github.io/blob/master/_avatar/kayoung_dp.jpg
+  profile_img: /image/kayoung_dp.jpg
   profile: Kayoung Kim
   social:
     github: https://github.com/kayoungk
 
 author2:
   name: Kaiqi Yang
-  profile_img: https://github.com/KaiqiYang94/kaiqiyang94.github.io/blob/master/_avatar/kayoung_dp.jpg
+  profile_img: /image/kayoung_dp.jpg
   profile: Kaiqi Yang
   social: 
     github: https://github.com/KaiqiYang94
