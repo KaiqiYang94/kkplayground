@@ -48,7 +48,7 @@ Sign in to your Azure account.
 
 Then, search for Azure App Service and install
 <figure>
-  <img src="../assets/image/2019-11-12/vscode_1.jpeg" alt="VSextension"/>
+  <img src="../assets/image/vscode_1.jpeg" alt="VSextension"/>
 </figure>
 
 Or click here to install: 
@@ -56,7 +56,7 @@ Or click here to install:
 
 Right click your subscription, choose the operating system that you want to deploy to. If you are targeting Linux, choose `Create New Web App...`, if targeting Windows, choose `Create New Web App... (Advanced)`.
 <figure>
-  <img src="../assets/image/2019-11-12/vscode_2.jpeg" alt="Subscription"/>
+  <img src="../assets/image/vscode_2.jpeg" alt="Subscription"/>
 </figure>
 
 Type a globally unique name for your Web App and press ENTER. Valid characters for an app name are 'a-z', '0-9', and '-'.
@@ -74,12 +74,12 @@ If targeting Windows using the Advanced option, follow the additional prompts:
 
 Select `Yes` when prompted to update your configuration to run npm install on the target server. Your app is then deployed.
 <figure>
-  <img src="../assets/image/2019-11-12/vscode_3.png" alt="Subscription"/>
+  <img src="../assets/image/vscode_3.png" alt="Subscription"/>
 </figure>
 
 When the deployment starts, you're prompted to update your workspace so that later deployments will automatically target the same App Service Web App. Choose `Yes` to ensure your changes are deployed to the correct app.
 <figure>
-  <img src="../assets/image/2019-11-12/vscode_4.png" alt="Subscription"/>
+  <img src="../assets/image/vscode_4.png" alt="Subscription"/>
 </figure>
 
 **If VSCode is ever asking which folder to deploy, choose `myApp/build`.**
@@ -89,7 +89,7 @@ When the deployment starts, you're prompted to update your workspace so that lat
 Congrats! Your `create-react-app` has been successfully deployed!
 
 <figure>
-  <img src="../assets/image/2019-11-12/vscode_5.png" alt="Subscription"/>
+  <img src="../assets/image/vscode_5.png" alt="Subscription"/>
 </figure>
 
 View your application online by clicking `Browse Website`.
@@ -99,4 +99,4 @@ Say, you have made some changes to your application and want to deploy the lates
 
 In the VSCode terminal,  `npm run build` or `yarn build`.
 
-After building the application, go to your Azure Web App Extension, find your subscription, find your wab application, right click and you will see 
+After building the application, go to your Azure Web App Extension, find your subscription, find your wab application, right click and you will see `Deploy to Web App...`. Click that and that's it.
