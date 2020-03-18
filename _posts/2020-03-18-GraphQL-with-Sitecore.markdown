@@ -6,8 +6,8 @@ categories:
   - Sitecore
   - GraphQL
 description: 
-image: https://picsum.photos/2000/1200?image=3072
-image-sm: https://picsum.photos/500/300?image=3072
+image: https://picsum.photos/id/1058/4608/3072
+image-sm: https://picsum.photos/id/1058/4608/3072
 ---
 # Using GraphQL dotnet with Sitecore index search
 
