@@ -9,8 +9,6 @@ description:
 image: https://picsum.photos/id/1058/4608/3072
 image-sm: https://picsum.photos/id/1058/4608/3072
 ---
-# Using GraphQL dotnet with Sitecore index search
-
 ## What have been achieved in this POC
 
 -   In this POC, a GraphQL endpoint has been build, which supports two top level queries for `country` and `destinations` respectively. We integrated the GraphQL endpoint with SOLR indexes to retrieve data. We also did the following performance optimizations:
