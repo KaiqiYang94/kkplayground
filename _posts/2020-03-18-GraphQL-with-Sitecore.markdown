@@ -5,7 +5,7 @@ date: 2020-03-18
 categories:
   - Sitecore
   - GraphQL
-description: 
+description: In this POC, a GraphQL endpoint has been build, which supports two top level queries and integrates with SOLR indexes to retrieve data.
 image: https://picsum.photos/id/1058/4608/3072
 image-sm: https://picsum.photos/id/1058/4608/3072
 ---
