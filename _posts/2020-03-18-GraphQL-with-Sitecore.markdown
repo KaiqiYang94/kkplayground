@@ -52,7 +52,7 @@ image-sm: https://picsum.photos/500/300?image=3072
 
 -   In this POC, we are using a very simple models. `Destination` and `Country`, where `Country` has a list of `Destinations`. It is not complex, but enough to test most of the functionalities. The `one-to-many` relationship between `Destination` and `Country` is also good to be used as an example to be optimized.
 
-![](../assets/image/2020-03-18-GraphQL-with-Sitecore/GraphQLPOCModel.png)
+![GraphQLPOCModel](/assets/image/2020-03-18-GraphQL-with-Sitecore/GraphQLPOCModel.png)
 
 #### Country
 
@@ -190,7 +190,7 @@ public class Query : ObjectGraphType
 
 It's common knowledge that having less hits to the db/indexes will result in a better performance in general. `N + 1` problem is a problem of firing up too many db/index/Api calls. For example, for a following data response, typically there will be `one` request for getting all countries info, for "Cook Islands", "India", "Canada" and "Ethiopia". And in the meantime, `four (N)` independent requests will be fired to get destinations for "Cook Islands", "India", "Canada" and "Ethiopia". Hence the `N + 1` problem.
 
-![](../assets/image/2020-03-18-GraphQL-with-Sitecore/2020-03-17-21-27-54.png)
+![Query demo](/assets/image/2020-03-18-GraphQL-with-Sitecore/2020-03-17-21-27-54.png)
 
 #### Data loader
 
@@ -204,10 +204,10 @@ Let's get back in the code, you might already notice the `ResovleAsync` function
 
 The second parameter of the function `GetOrAddCollectionBatchLoader` is a function which takes a list of Ids as input and returns a `Task<ILookup<Guid, Destination>>`. It is also the function that will be called when the data loader get all the Ids to filter by. Be aware that using `ILookup` is because one countryId will map to many `Destinations`. If one `Guid` here will map to one `Destination`, we would need a `IDictionary` here.
 
-![](../assets/image/2020-03-18-GraphQL-with-Sitecore/The%20data%20loader.png)
+![The data loader](/assets/image/2020-03-18-GraphQL-with-Sitecore/The%20data%20loader.png)
 
 You also need to make sure that when you are converting the `ILookup/IDictionary`, the key is the same for the `LoadAsync`. The library will use it to map the collections of results back to the entities. In this case, we are using `x => x.Country` as the key of the result(`x.Country` is actually of type `Guid`, represents the `id` of the `country` for the `destination`) which would map back to the `ctx.Source.Id` which is the id of the country we used to filter destinations by.
-![](../assets/image/2020-03-18-GraphQL-with-Sitecore/The%20key%20for%20Lookup.png)
+![The key for look up](/assets/image/2020-03-18-GraphQL-with-Sitecore/The%20key%20for%20Lookup.png)
 
 As a result the following query
 
@@ -248,10 +248,10 @@ A good practice is to do the filtering in SQL/Index queries, rather than loading
 
 For example, when you want to be able to filter the list of Destinations of a country by name, this is what you have to do":
 
-![](../assets/image/2020-03-18-GraphQL-with-Sitecore/Query%20Builder.png)
+![Query builder](/assets/image/2020-03-18-GraphQL-with-Sitecore/Query%20Builder.png)
 
 Then, in the async method:
-![](../assets/image/2020-03-18-GraphQL-with-Sitecore/Usage%20of%20the%20query%20builder.png)
+![Usage of the query builder](/assets/image/2020-03-18-GraphQL-with-Sitecore/Usage%20of%20the%20query%20builder.png)
 
 -   Surely there are better ways to organize the logic using design patterns, this is just a POC. Don't judge me! :)
 
@@ -366,7 +366,7 @@ They also provided a dedicated product [API Gateway](https://developer.akamai.co
 
 Error detection can also be tricky for the GraphQL queries since it would always return 200 and put the actually error inside of the response. Akamai's API gateway also have built-in functionality to detect the errors within the response. How to properly log those errors should also be investigated.
 
-![Error in GraphQL](../assets/image/2020-03-18-GraphQL-with-Sitecore/Error&#32;in&#32;GraphQL.png)
+![Error in GraphQL](/assets/image/2020-03-18-GraphQL-with-Sitecore/Error&#32;in&#32;GraphQL.png)
 
 ### Huge post data
 
