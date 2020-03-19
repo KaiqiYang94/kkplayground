@@ -4,7 +4,7 @@ permalink: /:year/:month/:day/:title/
 google_analytics: 
 
 title: KKPlayground
-description: 
+description: Presented by By Kaiqi Yang & Kayoung Kim
 url: ""
 baseurl: ""
 twitter_username: 
@@ -25,6 +25,8 @@ author2:
   profile: Kaiqi Yang
   social: 
     github: https://github.com/KaiqiYang94
+    linkedin: https://www.linkedin.com/in/kaiqi-yang/
+
 
 
 # Build settings
