@@ -13,7 +13,7 @@ image-sm: https://picsum.photos/500/300
 
 This blog post will talk about how to reuse classnames using Sass in general, and with classnames provided by third party libraries (PrimeVue as an example).
 
-</br>
+<br/>
 
 Sometimes we just want to reuse classnames.
 
@@ -30,7 +30,7 @@ Here's an example from <a href="https://primefaces.org/primevue/showcase/#/grid"
 </div>
 ```
 
-</br>
+<br/>
 
 Developers hate this. Why do I need to write the exact same thing four times? I have to change four times if I need to adjust something blah blah blah. And then we spend wa----y more time to find out how to write it only once.
 
@@ -44,7 +44,7 @@ In the Script section of your .vue file
 In your .scss file
 </li>
 </ul>
-</br>
+<br/>
 
 <h3>In Script</h3>
 In Vuejs, we could store the classname in a variable and bind it to `:class`.
