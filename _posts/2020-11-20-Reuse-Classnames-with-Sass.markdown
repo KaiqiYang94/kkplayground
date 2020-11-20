@@ -88,7 +88,7 @@ export default class MyView extends Vue {
 <h3>In .scss file</h3>
 Many developers are against putting pure styling stuff in the actual program and I totally understand.
 
-"Why not put 'p-col' in your css/scss file?"
+"Why not put 'p-col' in your scss file?"
 
 To save your time, I will just put the answer here.
 
