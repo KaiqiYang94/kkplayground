@@ -1,20 +1,20 @@
 # Site/SEO settings
-email: 
+email:
 permalink: /:year/:month/:day/:title/
-google_analytics: 
+google_analytics:
 
 title: KKPlayground
 description: Presented by By Kaiqi Yang & Kayoung Kim
 url: ""
 baseurl: ""
-twitter_username: 
-default_img: 
+twitter_username:
+default_img:
 
 # Profile settings
 author1:
   name: Kayoung Kim
   profile_img: /assets/image/kayoung_dp.jpg
-  profile: Kayoung Kim
+  profile: Kayoung KIM, an associate consultant from Telstra Purple. Keen in tech, but too lazy to write blog posts...
   social:
     github: https://github.com/kayoungk
     linkedin: https://www.linkedin.com/in/kayoung-kim-kk/
@@ -23,11 +23,9 @@ author2:
   name: Kaiqi Yang
   profile_img: /assets/image/kaiqi_dp.jpg
   profile: Kaiqi Yang
-  social: 
+  social:
     github: https://github.com/KaiqiYang94
     linkedin: https://www.linkedin.com/in/kaiqi-yang/
-
-
 
 # Build settings
 markdown: kramdown
